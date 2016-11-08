@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Library</title>
+	<style >
+	h1{
+		color:#0000CC;
+	}
+	#container{
+		width:800px; 
+		height:810px; 
+		margin: auto; 
+	
+	}
+	#title{
+		height: 80px;
+		background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/background-wallpapers-32.jpg");
+		margin: 0;
+	}
+	#bot{
+		height: 730px;
+		margin: 0;
+		background-image: url("http://www.planwallpaper.com/static/images/6790904-free-background-wallpaper.jpg");
+	}
+	#a{
+		border-right: 5px solid #000066;
+		height: 730px; 
+		margin: 0;
+		width: 500px;
+		float: left;
+	}
+	#b{
+		height: 800px;
+		margin: 0;
+		width: 280px;
+		float: left;
+	}
+	input{
+		position: absolute;
+		left: 470px;
+		clear: both;
+	}
+	.lable1{
+		margin-left:100px; 
+		font-size:140%;
+		color: #0000CC;
+	}
+	hr{
+	border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px #000066;
+	}
+	p{
+		text-align:center; 
+		font-size:250%; 
+		padding-top: 16px;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<div id="title">
+			<p><b>Library Management System</b></p>
+		</div>
+		<div id="bot">
+			<div id="a">
+				<form action="library.php" method="post">
+			<h1 style="text-align:center;">Search Books!</h1><br/>
+			<lable class="lable1">Book Id</lable><input type="text" name="Book_id" ><br/>
+			<lable class="lable1">Title</lable><input type="text" name="Title"><br/>
+			<lable class="lable1">Author</lable><input type="text" name="Author"><br/>
+			<input type="submit" value="Search your Book!" style="left:325px; margin-top:10px; font-size:130%;"><br/><br>
+		</form>
+		<hr>
+		<form action="borrower.php" method="post">
+			<h1 style="text-align:center;"	>Sign up now!</h1><br/>
+			<lable class="lable1">First Name</lable><input type="text" name="Fname"><br/>
+			<lable class="lable1">Last Name</lable><input type="text" name="Lname"><br/>
+			<lable class="lable1">Address</lable><input type="text" name="Address"><br/>
+			<lable class="lable1">Phone</lable><input type="text" name="Phone"><br/>
+			<input type="submit" value="Register!" style="left:325px; margin-top:10px; font-size:130%;"><br/><br/>
+		</form>
+		<hr>
+		<form action="checkin.php" method="post">
+			<h1 style="text-align:center;"	>Check in Books!</h1><br/>
+			<lable class="lable1">Book Id</lable><input type="text" name="Book_id" ><br/>
+			<lable class="lable1">Card Number</lable><input type="text" name="Card_num"><br/>
+			<lable class="lable1">First Name</lable><input type="text" name="Fname"><br/>
+			<lable class="lable1">Last Name</lable><input type="text" name="Lname"><br/>
+			<input type="submit" value="Check In!" style="left:325px; margin-top:10px; font-size:130%;"><br/><br/>
+		</form>
+			</div>
+			<div id="b">
+				<div style="height:300px;">
+					<form action="payfine.php" method="post">
+					<h1 style="text-align:center;"	>Pay fines!</h1><br/>
+					<lable class="lable1" style="margin-left:85px">Card Number</lable><br>
+					<input type="text" name="Card_num" style="position: absolute;left: 820px;clear: both;"><br/>
+					<input type="submit" value="Check!" style="left:850px; margin-top:10px; font-size:130%;"><br/>
+					</form>
+					<hr style="margin-top:60px;">
+				</div>
+				<div >
+					<h1 style="text-align:center;"	>Update the fines for late book!</h1><br>
+					<a href="fines.php"><button style="left:830px; position:absolute; ">Update the fines!</button></a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
